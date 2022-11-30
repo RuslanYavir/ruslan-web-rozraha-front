@@ -41,14 +41,14 @@ export const FullPost = () => {
           items={[
             {
               user: {
-                fullName: 'Вася Пупкин',
-                avatarUrl: 'https://mui.com/static/images/avatar/1.jpg',
+                fullName: 'Elon Musk',
+                avatarUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/e1/Elon_Musk_%28cropped%29.jpg',
               },
-              text: 'Это тестовый комментарий 555555',
+              text: 'Це текстовий коментар',
             },
             {
               user: {
-                fullName: 'Иван Иванов',
+                fullName: 'Dima',
                 avatarUrl: 'https://mui.com/static/images/avatar/2.jpg',
               },
               text: 'When displaying three lines or more, the avatar is not aligned at the top. You should set the prop to align the avatar at the top',

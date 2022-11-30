@@ -21,7 +21,7 @@ export const Header = () => {
       <Container maxWidth="lg">
         <div className={styles.inner}>
           <Link className={styles.logo} to="/">
-            <div>ARCHAKOV BLOG</div>
+            <div>SHIZA BLOG</div>
           </Link>
           <div className={styles.buttons}>
             {user ? (
@@ -36,10 +36,10 @@ export const Header = () => {
             ) : (
               <>
                 <Link to="/login">
-                  <Button variant="outlined">Войти</Button>
+                  <Button variant="outlined">Sign in</Button>
                 </Link>
                 <Link to="/register">
-                  <Button variant="contained">Создать аккаунт</Button>
+                  <Button variant="contained">Sign up</Button>
                 </Link>
               </>
             )}

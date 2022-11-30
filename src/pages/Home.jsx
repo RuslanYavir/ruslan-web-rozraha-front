@@ -26,8 +26,7 @@ export const Home = () => {
   return (
     <>
       <Tabs style={{ marginBottom: 15 }} value={0} aria-label="basic tabs example">
-        <Tab label="Новые" />
-        <Tab label="Популярные" />
+        <Tab label="News" />
       </Tabs>
       <Grid container spacing={4}>
         <Grid xs={8} item>
@@ -48,17 +47,17 @@ export const Home = () => {
             items={[
               {
                 user: {
-                  fullName: 'Вася Пупкин',
-                  avatarUrl: 'https://mui.com/static/images/avatar/1.jpg',
+                  fullName: 'Elon Musk',
+                  avatarUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/e1/Elon_Musk_%28cropped%29.jpg',
                 },
-                text: 'Это тестовый комментарий',
+                text: 'The best full-stack app in the world',
               },
               {
                 user: {
-                  fullName: 'Иван Иванов',
-                  avatarUrl: 'https://mui.com/static/images/avatar/2.jpg',
+                  fullName: 'Jeff Bezos',
+                  avatarUrl: 'https://m.media-amazon.com/images/M/MV5BYTNlOGZhYzgtMmE3OC00Y2NiLWFhNWQtNzg5MjRhNTJhZGVmXkEyXkFqcGdeQXVyNzg5MzIyOA@@._V1_.jpg',
                 },
-                text: 'When displaying three lines or more, the avatar is not aligned at the top. You should set the prop to align the avatar at the top',
+                text: 'Give me the best score',
               },
             ]}
             isLoading={false}

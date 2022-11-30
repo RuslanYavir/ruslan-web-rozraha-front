@@ -55,7 +55,7 @@ export const AddPost = () => {
       spellChecker: false,
       maxHeight: '400px',
       autofocus: true,
-      placeholder: 'Введите текст...',
+      placeholder: 'Text',
       status: false,
       autosave: {
         enabled: true,
@@ -107,7 +107,7 @@ export const AddPost = () => {
   return (
     <Paper style={{ padding: 30 }}>
       <Button onClick={() => inputFileRef.current.click()} variant="outlined" size="large">
-        Загрузить превью
+        Upload picture
       </Button>
       <input ref={inputFileRef} hidden type="file" onChange={handleChangeFile} />
       {fields.imageUrl && (
@@ -117,7 +117,7 @@ export const AddPost = () => {
           onClick={() => {
             setFieldValue('imageUrl', '');
           }}>
-          Удалить
+          Delete
         </Button>
       )}
       {fields.imageUrl && (
@@ -130,7 +130,7 @@ export const AddPost = () => {
         onChange={(e) => setFieldValue('title', e.target.value)}
         classes={{ root: styles.title }}
         variant="standard"
-        placeholder="Заголовок статьи..."
+        placeholder="Title"
         fullWidth
       />
       <TextField
@@ -138,7 +138,7 @@ export const AddPost = () => {
         onChange={(e) => setFieldValue('tags', e.target.value)}
         classes={{ root: styles.tags }}
         variant="standard"
-        placeholder="Тэги"
+        placeholder="Tags"
         fullWidth
       />
       <SimpleMDE
@@ -149,11 +149,11 @@ export const AddPost = () => {
       />
       <div className={styles.buttons}>
         <Button onClick={onSubmit} disabled={isEmptyFields} size="large" variant="contained">
-          {!isEditing ? 'Опубликовать' : 'Сохранить'}
+          {!isEditing ? 'Public' : 'Save'}
         </Button>
         <Link to="/">
           <Button disabled={isLoading} size="large">
-            Отмена
+            Cancel
           </Button>
         </Link>
       </div>
