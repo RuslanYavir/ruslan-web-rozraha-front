@@ -90,7 +90,7 @@ export const AddPost = () => {
       const { data } = await apiMethod({
         title: fields.title,
         text: fields.text,
-        imageUrl: 'http://localhost:4444' + fields.imageUrl,
+        imageUrl: process.env.REACT_APP_API_URL + fields.imageUrl,
         tags: fields.tags.split(','),
       });
 
@@ -121,7 +121,7 @@ export const AddPost = () => {
         </Button>
       )}
       {fields.imageUrl && (
-        <img className={styles.image} src={`http://localhost:4444${fields.imageUrl}`} />
+        <img className={styles.image} src={`${process.env.REACT_APP_API_URL}${fields.imageUrl}`} />
       )}
       <br />
       <br />
