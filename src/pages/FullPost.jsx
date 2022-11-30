@@ -44,14 +44,14 @@ export const FullPost = () => {
                 fullName: 'Elon Musk',
                 avatarUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/e1/Elon_Musk_%28cropped%29.jpg',
               },
-              text: 'Це текстовий коментар',
+              text: 'New post!!!',
             },
             {
               user: {
-                fullName: 'Dima',
+                fullName: 'Dev',
                 avatarUrl: 'https://mui.com/static/images/avatar/2.jpg',
               },
-              text: 'When displaying three lines or more, the avatar is not aligned at the top. You should set the prop to align the avatar at the top',
+              text: 'Nice',
             },
           ]}
           isLoading={false}>

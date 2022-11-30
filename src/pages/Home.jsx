@@ -57,7 +57,7 @@ export const Home = () => {
                   fullName: 'Jeff Bezos',
                   avatarUrl: 'https://m.media-amazon.com/images/M/MV5BYTNlOGZhYzgtMmE3OC00Y2NiLWFhNWQtNzg5MjRhNTJhZGVmXkEyXkFqcGdeQXVyNzg5MzIyOA@@._V1_.jpg',
                 },
-                text: 'Give me the best score',
+                text: 'Best blog',
               },
             ]}
             isLoading={false}
