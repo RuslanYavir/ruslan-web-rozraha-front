@@ -27,10 +27,10 @@ export const Header = () => {
             {user ? (
               <>
                 <Link to="/posts/create">
-                  <Button variant="contained">Написать статью</Button>
+                  <Button variant="contained">Write an article</Button>
                 </Link>
                 <Button onClick={logout} variant="contained" color="error">
-                  Выйти
+                  Sign out
                 </Button>
               </>
             ) : (
